@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+    :root {
+      --text-font: "Outfit", san-serif;
+    }
+    body {
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #D5E1EF;
+    }
+    .container {
+      width: 288px;
+      height: 465px;
+      background-color: #fff;
+      box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.048);
+      border-radius: 20px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    #qr-image {
+      height: 288px;
+      width: 288px;
+      border-radius: 10px;
+      
+    }
+
+    .text-card {
+      height: 129px;
+      width: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+    }
+    .text-heading {
+      color: #1F314F;
+      font-family:  var(--text-font);
+      font-weight: 700;
+      font-size: 22px;
+      text-align: center;
+      line-height: 1;
+      align-items: center;
+    }
+    .text-description {
+      color: #7D889E;
+      font-family: var(--text-font);
+      font-weight: 400;
+      font-size: 15;
+      text-align: center;
+      line-height: 1;
+      letter-spacing: 0.19px;
+    }
+  </style>
+</head>
+<body>
+  <div class='container'>
+    <div class='qr-container'>
+      <img id='qr-image' src="./images/image-qr-code.png">
+    </div>
+    <div class='text-card'>
+      <div class='text-heading'>Improve your front-end skills by building projects</div>
+      <div class="text-description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
+    </div>
+  </div>  
+  
+</body>
+</html>
