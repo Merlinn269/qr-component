@@ -33,54 +33,42 @@
       padding: 16px;
       display: flex;
       flex-direction: column;
-      gap: 24px;
     }
 
     #qr-image {
-      height: 288px;
-      width: 288px;
+      width: 100%;
       border-radius: 10px;
       
     }
-
-    .text-card {
-      height: 129px;
-      width: inherit;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      align-items: center;
-      justify-content: center;
+    .text-heading, .text-description {
+      font-optical-sizing: auto;
+      font-family:  "Outfit", sans-serif;
+      text-align: center;
     }
+
     .text-heading {
       color: #1F314F;
-      font-family:  var(--text-font);
       font-weight: 700;
       font-size: 22px;
-      text-align: center;
-      line-height: 1;
-      align-items: center;
+      margin: 20px 0 0;
     }
     .text-description {
       color: #7D889E;
-      font-family: var(--text-font);
       font-weight: 400;
-      font-size: 15;
-      text-align: center;
-      line-height: 1;
+      font-size: 15px;
       letter-spacing: 0.19px;
+      padding: 0px 16px;
+      margin: 16px 0;
     }
   </style>
 </head>
 <body>
   <div class='container'>
     <div class='qr-container'>
-      <img id='qr-image' src="./images/image-qr-code.png">
+      <img id='qr-image' src="./images/image-qr-code.png" alt="QR Code Image">
     </div>
-    <div class='text-card'>
-      <div class='text-heading'>Improve your front-end skills by building projects</div>
-      <div class="text-description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
-    </div>
+      <h1 class='text-heading'>Improve your front-end skills by building projects</h1>
+      <p class="text-description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
   </div>  
   
 </body>
